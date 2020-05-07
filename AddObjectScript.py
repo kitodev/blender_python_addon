@@ -23,13 +23,13 @@ class MainPanel(bpy.types.Panel):
         layout = self.layout
         
         row = layout.row()
-        row.label(text="Add an object",                        icon='CUBE')
+        row.label(text="Add an object", icon='CUBE')
         row = layout.row()
-        row.operator("mesh.primitive_cube_add",                        icon='CUBE')
+        row.operator("mesh.primitive_cube_add", icon='CUBE')
         row = layout.row()
-        row.operator("mesh.primitive_uv_sphere_add",                        icon='SPHERE')
+        row.operator("mesh.primitive_uv_sphere_add", icon='SPHERE')
         row = layout.row()
-        row.operator("object.text_add",                        icon='TEXT')
+        row.operator("object.text_add", icon='TEXT')
         
 def register():
     bpy.utils.register_class(MainPanel)
